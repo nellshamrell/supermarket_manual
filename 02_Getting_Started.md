@@ -8,6 +8,8 @@ The easiest way to get Knife (along with many other tools needed to use both Sup
 
 Knife-Supermarket is a plugin for Knife that makes it easy to interact with Supermarket.
 
+Make sure you have a [knife.rb](https://docs.chef.io/config_rb_knife.html) config file setup.
+
 If you have the Chef Development Kit (ChefDK), you can install the plugin with:
 
 ```bash
@@ -19,7 +21,7 @@ Otherwise, you can also install a gem version of this plugin through:
 ```bash
   gem install knife-supermarket
 ```
-You can also use Knife-Supermarket to switch between supermarkets if you are using multiple supermarkets.  For more information, see (knife-supermarket)[https://github.com/cwebberOps/knife-supermarket].
+You can also use Knife-Supermarket to switch between supermarkets if you are using a private Supermarket or multiple Supermarkets.  For more information, see (knife-supermarket)[https://github.com/cwebberOps/knife-supermarket].
 
 ## Stove
 
