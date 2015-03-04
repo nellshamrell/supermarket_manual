@@ -1,0 +1,75 @@
+Let's create a basic cookbook to upload to the Supermarket site.  This cookbook will install apache2 and show a custom home page.
+
+(This assumes you have Chef DK installed)
+
+## Creating a Chef Repo
+
+To create a Chef repo, run this command:
+
+```bash
+  $ chef generate repo my_chef_repo
+```
+Then cd into that repo
+
+```bash
+  $ cd my_chef_repo
+```
+
+## Creating a Cookbook
+
+Now create a cookbook within that repo.
+
+```bash
+  $ chef generate cookbook cookbooks/my_apache2_cookbook
+```
+
+## Creating a template
+
+Next we'll create a template for our custom home page.
+
+```bash
+  $ chef generate template cookbooks/my_apache2_cookbook index.html
+```
+
+That will create a file called index.html.erb in the cookbooks/my_apache2_cookbooks/templates/default directory path.
+
+Now open this file with your favorite text editor, I use vim here.
+
+```bash
+  $ vim cookbooks/my_apache2_cookbook/templates/default/index.html.erb
+```
+
+And enter in some HTML to be displayed.
+
+```bash
+<html>
+  <body>
+    <h1>Chef Love!</h1>
+  </body>
+</html>
+```
+
+Then save and close the file.
+
+## Creating a recipe
+
+Now open up the default recipe that was created when you generated the my_apache2_cookbook.
+
+```bash
+  $ vim cookbooks/my_apache2_cookbook/recipes/default.rb
+```
+And insert the following content:
+
+```bash
+  package 'apache2' # Installs the apache2 package
+
+  service 'apache2' do
+    action [:start, :enable] # Starts and enables the apache2 service on boot
+  end
+
+  template '/var/www/html/index.html' do
+    source 'index.html.erb' # Defines a template for the default home page at /var/www/html/index.html
+  end
+```
+
+And now we have a very basic cookbook we can upload to Supermarket!
