@@ -1,8 +1,6 @@
 # Chef Supermarket: A Guide
 
-Supermarket is Chef's community cookbooks site.  It is a place for Chef community members to download community cookbooks, collaborate on cookbooks, and upload cookbooks to be used by other community members.  Supermarket is also intended to make it easier to participate in Chef's open source projects through Contributor License Agreements (CLA's).
-
-[Supermarket Announcement Blog Post](https://www.chef.io/blog/2014/03/24/chef-supermarket-the-new-community-site/)
+Supermarket is Chef's community cookbooks site.  It is a place for Chef community members to download community cookbooks, collaborate on cookbooks, and upload cookbooks to be used by other community members.  Supermarket is also intended to make it easier to participate in Chef's open source projects through Contributor License Agreements (CLA's).  Check out the [Supermarket Announcement Blog Post](https://www.chef.io/blog/2014/03/24/chef-supermarket-the-new-community-site/) for more information.
 
 If you are going to contribute cookbooks to Supermarket, you will need to sign a CLA.  For more information on why Chef requires CLA's and how to sign one, please see [here](https://supermarket.chef.io/become-a-contributor).
 
@@ -35,15 +33,15 @@ Make sure you have a [knife.rb](https://docs.chef.io/config_rb_knife.html) confi
 If you have the Chef Development Kit (ChefDK), you can install the plugin with:
 
 ```bash
-  chef gem install knife-supermarket
+  $ chef gem install knife-supermarket
 ```
 
 Otherwise, you can also install a gem version of this plugin through:
 
 ```bash
-  gem install knife-supermarket
+  $ gem install knife-supermarket
 ```
-You can also use Knife-Supermarket to switch between supermarkets if you are using a private Supermarket or multiple Supermarkets.  For more information, see (knife-supermarket)[https://github.com/cwebberOps/knife-supermarket].
+You can also use Knife-Supermarket to switch between supermarkets if you are using a private Supermarket or multiple Supermarkets.  For more information, see  the [knife-supermarket](https://github.com/cwebberOps/knife-supermarket) github repo.
 
 This guide will take you through the basics of using Knife-Supermarket.  For more information on the various commands and options, please see the full [Knife-Supermarket documentation](https://docs.chef.io/plugin_knife_supermarket.html).
 
@@ -184,7 +182,7 @@ To download a cookbook as a tar.gz archive and place it in the current working d
 
 ### Install
 
-Installing a cookbook is similar to downloading it, but rather than saving the cookbook as a tar.gz, it extracts the cookbooks and sets up a git submodule so you can keep it up to date with the original cookbook.  See this [Stack Overflow](http://stackoverflow.com/a/15075143) for an excellent explanation.
+Installing a cookbook is similar to downloading it, but rather than saving the cookbook as a tar.gz, it extracts the cookbook and sets up a git submodule so you can keep it up to date with the original cookbook.  See this [Stack Overflow](http://stackoverflow.com/a/15075143) for an excellent explanation.
 
 ```bash
  $ knife supermarket install mysql
@@ -220,9 +218,9 @@ First, take a look at your knife.rb configuration file.  Mine lives at .chef/kni
 You will need to have lines similar to this in the config file.  If you don't already have them, please add them in.
 
 ```bash
-  node_name "nellshamrell" #Replace with the login name you use to login to the Supermarket.
-  client_key "#{ENV['HOME']}/.chef/client.pem" #Define the path to wherever your client.pem file lives.  This is the key you generated when you signed up for a Chef account.
-  cookbook_path [ '/Users/nshamrell/Projects/my_chef_repo/cookbooks' ] #Directory where the cookbook you're uploading resides.
+  node_name "nellshamrell" # Replace with the login name you use to login to the Supermarket.
+  client_key "#{ENV['HOME']}/.chef/client.pem" # Define the path to wherever your client.pem file lives.  This is the key you generated when you signed up for a Chef account.
+  cookbook_path [ '/Users/nshamrell/Projects/my_chef_repo/cookbooks' ] # Directory where the cookbook you're uploading resides.
 ```
 
 Then use this command to upload the cookbook to the Supermarket!
@@ -245,14 +243,11 @@ This will remove your cookbook from the Supermarket site.
 
 And there you have it, the basics of using Chef Supermarket!  Happy cooking!
 
-
-
-
 ## Creating a Cookbook
 
 Let's create a basic cookbook to upload to the Supermarket site.  This cookbook will install apache2 and show a custom home page.
 
-(This assumes you have Chef DK installed)
+(This assumes you have [Chef Development Kit](https://downloads.chef.io/chef-dk/) installed.)
 
 ## Creating a Chef Repo
 
