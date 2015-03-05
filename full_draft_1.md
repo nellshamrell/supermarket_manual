@@ -231,6 +231,7 @@ Then use this command to upload the cookbook to the Supermarket!
 
 Notice that I defined the Supermarket category my cookbook should be in - in this case, "Web Servers".  Other categories you can use are  "Databases", "Process Management", "Monitoring & Trending", "Programming Languages", "Package Management", "Applications", "Networking", "Operating Systems & Virtualization", "Utilities", or "Other".
 
+NOTE: [Stove](https://github.com/sethvargo/stove) is an alternate tool for sharing cookbooks.  For more information, please see the project github page.
 ### Unshare
 
 Should you ever need to unshare a cookbook from the Supermarket, you can use the "unshare" command to do so.
