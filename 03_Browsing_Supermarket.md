@@ -6,7 +6,7 @@ To see a list of all community cookbooks available from Supermarket, run the fol
 
 
 ```bash
- $ knife cookbook site list
+ $ knife supermarket list
 ```
 
 This will return lots of output similar to:
@@ -39,7 +39,7 @@ This will return lots of output similar to:
 Looking for a particular cookbook?  The most downloaded cookbook as of February 2015 is the mysql cookbook.  If I wanted to search for this cookbook I would use a command similar to this:
 
 ```bash
- $ knife cookbook site search mysql
+ $ knife supermarket search mysql
 ```
 
 Which will return output similar to this:
@@ -69,7 +69,7 @@ Let's take a closer look at that first mysql cookbook.
 To view more information about a particular cookbook, run the following:
 
 ```bash
- $ knife cookbook site show mysql
+ $ knife supermarket show mysql
 ```
 
 Which will return input similar to this:
@@ -106,7 +106,7 @@ Which will return input similar to this:
 If you want to take a look at a specific version of a cookbook, include it in the command like this:
 
 ```bash
- $ knife cookbook site show mysql 0.10.0
+ $ knife supermarket show mysql 0.10.0
 ```
 
 Which will return output similar to:

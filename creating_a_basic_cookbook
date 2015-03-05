@@ -17,6 +17,15 @@ Then cd into that repo
 
 ## Creating a Cookbook
 
+Since this is a cookbook we're going to upload to the Supermarket site, let's check whether a cookbook already exists with that name on Supermarket.  I want to use the name "my_apache2_cookbook", so to check whether there's already a cookbook with that name on Supermarket I run:
+
+
+```bash
+  $ chef generate cookbook cookbooks/my_apache2_cookbook
+```
+
+If I get back a response that "The object you are looking for could not be found", that means that cookbook name is available on Supermarket.  For the rest of this tutorial, I'll use the cookbook name "my_apache2_cookbook".
+
 Now create a cookbook within that repo.
 
 ```bash
