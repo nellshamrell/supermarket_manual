@@ -17,7 +17,6 @@ Some of Chef's customers and community members have expressed interest in using 
 [Chef Supermarket Omnimbus Project](https://github.com/chef/omnibus-supermarket)
 
 We will cover installing and maintaining your own private version of Supermarket in Chapter [LINK TO CHAPTER]
-## What is a CC
 
 ## What can I do with Supermarket?
 
