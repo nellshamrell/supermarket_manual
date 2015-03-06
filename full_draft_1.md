@@ -2,8 +2,6 @@
 
 Supermarket is Chef's community cookbooks site.  It is a place for Chef community members to download community cookbooks, collaborate on cookbooks, and upload cookbooks to be used by other community members.  Supermarket is also intended to make it easier to participate in Chef's open source projects through Contributor License Agreements (CLA's).  Check out the [Supermarket Announcement Blog Post](https://www.chef.io/blog/2014/03/24/chef-supermarket-the-new-community-site/) for more information.
 
-If you are going to contribute cookbooks to Supermarket, you will need to sign a CLA.  For more information on why Chef requires CLA's and how to sign one, please see [here](https://supermarket.chef.io/become-a-contributor).
-
 There are two versions of Supermarket available today.
 
 ### Public Supermarket
