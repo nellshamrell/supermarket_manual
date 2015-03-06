@@ -8,9 +8,9 @@ There are two versions of Supermarket available today.
 
 This is available at the [Chef Supermarket site](https://supermarket.chef.io/).  This is an open source project, you can find and contribute to the [repo on GitHub](https://github.com/chef/supermarket).
 
-### Omnibus Supermarket
+### Private Supermarket
 
-There is also a version of Supermarket that can be run behind a firewall.  This guide will not cover the omnibus version of Supermarket, but many of the same principles will apply.  Stay tuned for an Ommibus Supermarket guide!
+There is also a version of Supermarket that can be run privately in your own infrastructure.  This guide will not cover the private version of Supermarket, but many of the same principles will apply.  Stay tuned for an Private Supermarket guide!
 
 ## Getting Started with Supermarket
 
