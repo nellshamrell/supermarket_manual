@@ -6,7 +6,7 @@ There are two versions of Supermarket available today.
 
 ### Public Supermarket
 
-This is available at the [Chef Supermarket site](https://supermarket.chef.io/).  This is an open source project, you can find and contribute to the repo [here](https://github.com/chef/supermarket).
+This is available at the [Chef Supermarket site](https://supermarket.chef.io/).  This is an open source project, you can find and contribute to the [repo on GitHub](https://github.com/chef/supermarket).
 
 ### Omnibus Supermarket
 
