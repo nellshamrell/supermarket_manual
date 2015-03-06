@@ -1,18 +1,16 @@
 # Chef Supermarket: A Guide
 
-Supermarket is Chef's community cookbooks site.  It is a place for Chef community members to download community cookbooks, collaborate on cookbooks, and upload cookbooks to be used by other community members.  Supermarket is also intended to make it easier to participate in Chef's open source projects through Contributor License Agreements (CLA's).  Check out the [Supermarket Announcement Blog Post](https://www.chef.io/blog/2014/03/24/chef-supermarket-the-new-community-site/) for more information.
-
-If you are going to contribute cookbooks to Supermarket, you will need to sign a CLA.  For more information on why Chef requires CLA's and how to sign one, please see [here](https://supermarket.chef.io/become-a-contributor).
+Supermarket is the Chef community's central clearing house for sharing cookbooks, tools, and plugins.  It is a place for Chef community members to download community cookbooks, collaborate on cookbooks, and upload cookbooks to be used by other community members.  It is also the place to share information about tools that improve Chef's ecosystem.  The Supermarket makes it easier to start participating in Chef's open source projects by allowing individuals and corporations to sign and manage their Contributor License Agreements (CLA's).  Check out the [Supermarket Announcement Blog Post](https://www.chef.io/blog/2014/03/24/chef-supermarket-the-new-community-site/) for more information.
 
 There are two versions of Supermarket available today.
 
 ### Public Supermarket
 
-This is available at the [Chef Supermarket site](https://supermarket.chef.io/).  This is an open source project, you can find and contribute to the repo [here](https://github.com/chef/supermarket).
+This is available at the [Chef Supermarket site](https://supermarket.chef.io/).  This is an open source project, you can find and contribute to the [repo on GitHub](https://github.com/chef/supermarket).
 
-### Omnibus Supermarket
+### Private Supermarket
 
-There is also a version of Supermarket that can be run behind a firewall.  This guide will not cover the omnibus version of Supermarket, but many of the same principles will apply.  Stay tuned for an Ommibus Supermarket guide!
+There is also a version of Supermarket that can be run privately in your own infrastructure.  This guide will not cover the private version of Supermarket, but many of the same principles will apply.  Stay tuned for an Private Supermarket guide!
 
 ## Getting Started with Supermarket
 
@@ -182,7 +180,7 @@ To download a cookbook as a tar.gz archive and place it in the current working d
 
 ### Install
 
-Installing a cookbook is similar to downloading it, but rather than saving the cookbook as a tar.gz, it extracts the cookbook and sets up a git submodule so you can keep it up to date with the original cookbook.  See this [Stack Overflow](http://stackoverflow.com/a/15075143) for an excellent explanation.
+Installing a cookbook is similar to downloading it, but rather than saving the cookbook as a tar.gz, it extracts the cookbook and sets up a git branch so you can keep it up to date with the original cookbook.  See this [Stack Overflow](http://stackoverflow.com/a/15075143) for an excellent explanation.
 
 ```bash
  $ knife supermarket install mysql
